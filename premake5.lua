@@ -39,6 +39,8 @@ project "libvorbis"
 		linkoptions { "/DEF:\"../../Source/Thirdparty/libvorbis/win32/vorbis.def\"" }
 	configuration {}
 	
+	warnings "Off" --Disable warnings, third party libs flood the log
+	
 	targetdir( LDIR_THIRDPARTY_LIB )
 	location( LDIR_THIRDPARTY_BUILD )
 
@@ -62,6 +64,8 @@ project "libvorbisenc"
 		linkoptions { "/DEF:\"../../Source/Thirdparty/libvorbis/win32/vorbisenc.def\"" }
 	configuration {}
 	
+	warnings "Off" --Disable warnings, third party libs flood the log
+	
 	targetdir( LDIR_THIRDPARTY_LIB )
 	location( LDIR_THIRDPARTY_BUILD )
 
@@ -84,6 +88,8 @@ project "libvorbisfile"
 	configuration {"SharedLib", "windows"}
 		linkoptions { "/DEF:\"../../Source/Thirdparty/libvorbis/win32/vorbisfile.def\"" }
 	configuration {}
+	
+	warnings "Off" --Disable warnings, third party libs flood the log
 	
 	targetdir( LDIR_THIRDPARTY_LIB )
 	location( LDIR_THIRDPARTY_BUILD )
